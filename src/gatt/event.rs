@@ -20,6 +20,7 @@ pub struct ReadRequest {
 }
 
 #[derive(Debug)]
+#[non_exhaustive]
 pub struct WriteRequest {
     pub data: Vec<u8>,
     pub offset: u16,
