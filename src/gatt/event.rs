@@ -26,6 +26,7 @@ pub struct WriteRequest {
     pub offset: u16,
     pub without_response: bool,
     pub response: ResponseSender,
+    pub mtu: u16,
 }
 
 #[derive(Debug, Clone)]
